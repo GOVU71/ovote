@@ -1,0 +1,31 @@
+  <center>
+  <h2>Welcome Voter </h2><br>
+<table align="center" width=30% style="font-size:24px;">
+<form action="newvoter.jsp" method="post" onsubmit="return validate()">
+<tr><th>Name</th><th><input type="text" name="name" required /></th></tr>
+<tr><th>UserName</th><th><input type="text" name="user" required /></th></tr>
+<tr><th>Password</th><th><input type="password" name="pwd" required /></th></tr>
+<tr><th>EamilID</th><th><input type="email" name="email" required /></th></tr>
+<tr><th>MobileNumber</th><th><input type="text" name="mno" pattern="[0-9]{10}" required /></th></tr>
+<tr><th>Gender</th>
+<th>
+ Male<input type="radio" name="gender" value="male" />&nbsp;&nbsp;&nbsp;&nbsp;
+ Female<input type="radio" name="gender" value="female" />
+</th></tr>
+<tr><th>ID Proof</th><th><select  name="idproof" id="idp" >
+<option value="AadharNumber">Aadhar Number
+<option value="PANNumber">PAN Number
+<option value="VoterID">Voter ID
+</select>
+</th></tr>
+<tr><th>Reference No</th><th><input type="text" name="refid" required  id="refi"/></th></tr>
+<tr><th>Date of Birth</th><th><input type="date" name="dob" required /></th></tr>
+<tr><th>Constituency</th><th><input type="text" name="const" required /></th></tr>
+<tr><th>State</th><th><input type="text" name="state" required /></th></tr>
+<tr><th>Address</th><th><textarea rows=5 cols=25 name="address" >
+</textarea></th></tr>
+<tr>
+<th><input type="submit" value="Submit" /></th>
+<th><input type="reset" value="Reset" /></th>
+</tr>				  </form>
+				</table>

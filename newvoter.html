@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://codepen.io/skjha5993/pen/bXqWpR.css">
+    <style>
+        label {
+    font-weight: 600;
+    color:black;
+}
+        .text-center {
+            color: white;
+        }
+body {
+  background-color:black;
+}
+    </style>
+    <title>Voter Registration</title>
+</head>
+<body>
+
+    <div class="container">
+        <form action="uploadFile1.jsp" method="post" onsubmit="return validate()">
+            <h2 class="text-center">Voter Registration</h2>
+        <div class="row jumbotron">
+            <div class="col-sm-6 form-group">
+                <label for="name-f">First Name</label>
+                <input type="text" class="form-control" name="fname"  placeholder="Enter your first name." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="name-l">Middle name</label>
+                <input type="text" class="form-control" name="lname" placeholder="Enter your last name.">
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="name-l">Last name</label>
+                <input type="text" class="form-control" name="lname"  placeholder="Enter your last name." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email"  placeholder="Enter your email." required>
+            </div>
+            
+            <div class="col-sm-6 form-group">
+                <label for="name-f">Voter ID</label>
+                <input type="text" class="form-control" name="name"  placeholder="Enter your first name." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="pass">Password</label>
+                <input type="Password" name="pwd" class="form-control"  placeholder="Enter your password." required>
+            </div>
+             <div class="col-sm-6 form-group">
+                <label for="tel">Mobile Nmuber</label>
+                <input type="tel" name="mno" class="form-control" id="tel" placeholder="Enter Your Contact Number." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="sex">Gender</label>
+                <select id="sex" class="form-control browser-default custom-select">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="unspesified">Others</option>
+            </select>
+            </div>
+        <div class="col-sm-6 form-group">
+                <label for="Date">Date Of Birth</label>
+                <input type="date" name="dob" class="form-control"  placeholder="" required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label >ID Proof</label>
+                <select id="idp" name="idproof"class="form-control browser-default custom-select">
+                <option value="AadharNumber">Aadhar Number</option>
+                <option value="VoterID">Voter ID</option>
+                <option value="PAN Number">PAN Number</option>
+            </select>
+            </div>
+            
+            <div class="col-sm-6 form-group">
+                <label for="name-f">Reference No.</label>
+                <input type="text" class="form-control" name="refid"  placeholder="Enter refernce no." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="name-f">Upload ID proof</label>
+                <input type="file" class="form-control" name="fname"  required>
+            </div>
+            
+            <div class="col-sm-6 form-group">
+                <label for="name-f">Constituency</label>
+                <input type="text" class="form-control" name="const"  placeholder="Enter constituency name." required>
+            </div>
+            
+    
+            
+            <div class="col-sm-6 form-group">
+                <label >State</label>
+                <select class="form-control custom-select browser-default" name="state">
+                    <option value="Afghanistan">Andhra Pradesh</option>
+<option value="Åland Islands">Arunachal Pradesh</option>
+<option value="Albania">Assam</option>
+<option value="Algeria">Bihar</option>
+<option value="American Samoa">Chattisgarh</option>
+<option value="Andorra">Goa</option>
+<option value="Angola">Gujarat</option>
+<option value="Anguilla">Haryana</option>
+<option value="Antarctica">Himachal Pradesh</option>
+<option value="Antigua and Barbuda">Jammu and Kashmir</option>
+<option value="Argentina">Jharkhand</option>
+<option value="Armenia">Karnataka</option>
+<option value="Aruba">Kerela</option>
+<option value="Australia">Madhya Pradesh</option>
+<option value="Austria">Maharashtra</option>
+<option value="Azerbaijan">Manipur</option>
+<option value="Bahamas">Meghalaya</option>
+<option value="Bahrain">Mizoram</option>
+<option value="Bangladesh">Nagaland</option>
+<option value="Barbados">Orissa</option>
+<option value="Belarus">Punjab</option>
+<option value="Belgium">Rajasthan</option>
+<option value="Belize">Sikkim</option>
+<option value="Benin">Tamil Nadu</option>
+<option value="Bermuda">Telangana</option>
+<option value="Bhutan">Tripura</option>
+<option value="Bolivia">Uttar Pradesh</option>
+<option value="Bosnia and Herzegovina">Uttarakhand</option>
+<option value="Botswana">West Bengal</option>
+ </select>
+            </div>
+            
+       <div class="col-sm-6 form-group">
+                <label for="address-2">Address</label>
+                <input type="address" class="form-control" name="address" placeholder="Village/City Name." required>
+            </div> 
+           
+            <div class="col-sm-12 form-group mb-0">
+                <input type="submit" class="btn btn-primary float-right"  value="submit" >
+            </div> 
+            <br>
+           
+            
+           
+            
+            
+        </div>
+        </form>
+    </div>
+
+
+</body>
+</html>

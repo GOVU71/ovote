@@ -1,0 +1,22 @@
+ create database ovs;
+ use ovs;
+ create table admin(username varchar(40),pwd varchar(40));
+ insert into admin values('admin','admin');
+
+create table voters(name varchar(40),username varchar(40),pwd varchar(40),emailid varchar(40),mobilenumber varchar(40),gender varchar(40),refid varchar(40),refno varchar(40),dob varchar(40),const varchar(40),state varchar(40),address text,district text,status int(1),vid text);
+
+create table constituency(cid int auto_increment primary key,constitiency text,district text,state text);
+
+create table candidates(name varchar(40),username varchar(40),pwd varchar(40),emailid varchar(40),mobilenumber varchar(40),gender varchar(40),refid varchar(40),refno varchar(40),dob varchar(40),const varchar(40),state varchar(40),address text,district text,party text,cnid varchar(40) primary key);
+
+create table electionregistration(rid int auto_increment primary key,cname varchar(40),Constituency varchar(400),district varchar(40),state varchar(400),partyname varchar(400),ncihld int(1),ncases int,property int(10),pdetails text,status int(1),qualification text,cid text);
+
+create table elections(eid int auto_increment primary key,cname varchar(40),party varchar(40),Constituency varchar(400),district varchar(40),state varchar(400),votes int);
+
+create table election_results(erid int auto_increment primary key,cname varchar(40),party text,constituency text,district text,state text,winner text,noofvotes int,votername varchar(40));
+
+create table winners(wid int primary key auto_increment,cname text,party text,constituency text,district  text,state text,noofvotes text);
+
+create table fileupload(id varchar(40),fpath text);
+
+ create table completedvoterlist(votername varchar(40));

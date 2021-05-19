@@ -1,0 +1,113 @@
+ul li a{
+    color: white;
+    font-size: 25px;
+      padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    text-decoration: none;
+}
+ul li a:hover{
+    background-color: blue;
+    color: white;
+    
+    
+}
+.b1
+{
+position: absolute;
+	width: 460px;
+	height: 200px;
+	background:rgba(0,0,0,0.9);
+    left:-45%;
+    top:80%;
+     border-radius:15px;
+    color: white;
+}
+
+.b2
+{
+   position: absolute;
+	width: 460px;
+	height: 200px;
+	background:rgba(0,0,0,0.9);
+    left:60%; 
+    top:80%;
+    border-radius:15px;
+    color: white;
+    
+}
+
+.b3
+{
+position: absolute;
+	width: 460px;
+	height: 200px;
+	background:rgba(0,0,0,0.9);
+    left:-45%;
+    top:210%;
+    border-radius:15px;
+    color: white;
+}
+.b4
+{
+   position: absolute;
+	width: 460px;
+	height: 200px;
+	background:rgba(0,0,0,0.9);
+    left:60%; 
+    top:210%;
+    border-radius:15px;
+    color: white;
+}
+#c
+{
+    position: absolute;
+    top:230%;
+}
+.b1 p{
+
+    position: absolute;
+    top:25%;
+    left: 5%;
+    right: 5%;
+    font-size: 15px;
+    color: white;
+}
+.b2 p{
+
+    position: absolute;
+    top:30%;
+    left: 5%;
+    right: 5%;
+    font-size: 15px;
+    color: white;
+}
+.b3 p{
+
+    position: absolute;
+    top:20%;
+    left: 5%;
+    right: 5%;
+    font-size: 15px;
+    color: white;
+    
+}
+.b4 p{
+
+    position: absolute;
+    top:30%;
+    left: 5%;
+    right: 5%;
+    font-size: 15px;
+    color: white;
+}
+.ic
+{   
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	position: absolute;
+	top: 140%;
+    
+	left: calc(40% - 50px);
+}
